@@ -1,0 +1,5 @@
+name = Islandora Scholar Templates
+description = A module that overrides the Islandora Scholar module display to use template files instead of theme functions.
+package = Islandora Solution Packs
+version = 7.x-dev
+core = 7.x
