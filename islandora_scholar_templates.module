@@ -1,0 +1,24 @@
+<?php
+
+function islandora_scholar_templates_ir_citationCModel_islandora_view_object($object) {
+  $output = theme('citation_display');
+  return array('citation.tab' => $output);
+}
+
+function islandora_scholar_templates_ir_thesisCModel_islandora_view_object($object) {
+  $output = theme('thesis_display');
+  return array('citation.tab' => $output);
+}
+
+function islandora_scholar_templates_theme() {
+  return array(
+    'citation_display' => array(
+      'path' => drupal_get_path('module', 'islandora_scholar_templates').'/theme',
+      'template' => 'islandora-citation', //see islandora-citation.tpl.php
+    ),
+    'thesis_display' => array(
+      'path' => drupal_get_path('module', 'islandora_scholar_templates').'/theme',
+      'template' => 'islandora-thesis', //see islandora-thesis.tpl.php
+    ),
+  );  
+}
